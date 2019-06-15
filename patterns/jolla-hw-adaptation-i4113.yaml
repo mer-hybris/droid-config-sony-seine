@@ -20,6 +20,9 @@ Requires:
 - libhybris-libGLESv2
 - libhybris-libwayland-egl
 
+# Telephony
+- ofono-ril-binder-plugin
+
 # Sensors
 - hybris-libsensorfw-qt5
 
