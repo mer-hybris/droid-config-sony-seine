@@ -5,9 +5,10 @@
 %define vendor_pretty Sony
 %define device_pretty Xperia 10 - Dual SIM
 
-%define out_of_image_files 1
-
 %define pixel_ratio 1.75
+
+%define provides_own_board_mapping 1
+%define out_of_image_files 1
 
 # Device-specific ofono configuration
 Provides: ofono-configs
