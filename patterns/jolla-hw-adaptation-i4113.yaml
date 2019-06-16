@@ -6,7 +6,7 @@ Name: jolla-hw-adaptation-i4113
 Requires:
 - droid-hal-i4113
 - droid-hal-i4113-img-boot
-- droid-hal-i4113-kernel-modules
+- droid-hal-i4113-img-recovery
 - droid-config-i4113-sailfish
 - droid-config-i4113-pulseaudio-settings
 - droid-config-i4113-policy-settings
