@@ -1,19 +1,10 @@
-# Feel free to disable non-critical HA parts during devel by commenting lines out
-# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
-
-Description: Pattern with packages for i4113 HW Adaptation
-Name: jolla-hw-adaptation-i4113
+Description: Pattern with packages for kirin HW Adaptation
+Name: jolla-hw-adaptation-kirin
 Requires:
-- droid-hal-i4113
-- droid-hal-i4113-img-boot
-- droid-hal-i4113-img-recovery
-- droid-config-i4113-sailfish
-- droid-config-i4113-pulseaudio-settings
-- droid-config-i4113-policy-settings
-- droid-config-i4113-preinit-plugin
-- droid-config-i4113-flashing
-- droid-config-i4113-bluez5
-- droid-hal-version-i4113
+- droid-hal-kirin
+- droid-hal-kirin-img-boot
+- droid-hal-kirin-img-recovery
+- droid-hal-kirin-tools
 
 # Hybris packages
 - libhybris-libEGL
@@ -25,6 +16,9 @@ Requires:
 
 # Telephony
 - ofono-ril-binder-plugin
+
+# NFC
+- nfcd-binder-plugin
 
 # Sensors
 - hybris-libsensorfw-qt5
@@ -64,32 +58,15 @@ Requires:
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
 - usb-moded
-- usb-moded-defaults-android
-- usb-moded-developer-mode-android
-
-# Extra useful modes not officially supported:
-# might need some configuration to get working
-#- usb-moded-mass-storage-android-config
-# working but careful with roaming!
-- usb-moded-connection-sharing-android-config
-# android diag mode only usable for certain android tools
-#- usb-moded-diag-mode-android
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill
 
 # enable device lock and allow to select untrusted software
-- jolla-devicelock-daemon-encsfa
+- sailfish-devicelock-fpd
 
 # For GPS
 - geoclue-provider-hybris
-
-# For FM radio on some QCOM devices
-#- qt5-qtmultimedia-plugin-mediaservice-irisradio
-#- jolla-mediaplayer-radio
-
-# For devices with SD Card
-#- sd-utils
 
 Summary: Jolla HW Adaptation i4113
 
