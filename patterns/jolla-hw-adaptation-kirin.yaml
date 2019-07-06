@@ -1,19 +1,13 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-Description: Pattern with packages for i4113 HW Adaptation
-Name: jolla-hw-adaptation-i4113
+Description: Pattern with packages for kirin HW Adaptation
+Name: jolla-hw-adaptation-kirin
 Requires:
-- droid-hal-i4113
-- droid-hal-i4113-img-boot
-- droid-hal-i4113-img-recovery
-- droid-config-i4113-sailfish
-- droid-config-i4113-pulseaudio-settings
-- droid-config-i4113-policy-settings
-- droid-config-i4113-preinit-plugin
-- droid-config-i4113-flashing
-- droid-config-i4113-bluez5
-- droid-hal-version-i4113
+- droid-hal-kirin
+- droid-hal-kirin-img-boot
+- droid-hal-kirin-img-recovery
+- droid-hal-kirin-tools
 
 # Hybris packages
 - libhybris-libEGL
