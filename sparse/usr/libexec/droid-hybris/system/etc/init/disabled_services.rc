@@ -11,3 +11,9 @@ service media mediaserver_HYBRIS_DISABLED
 service update_engine update_engine_HYBRIS_DISABLED
 
 service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service_HYBRIS_DISABLED
+
+service lmkd /system/bin/lmkd_HYBRIS_DISABLED
+
+service vold /system/bin/vold_HYBRIS_DISABLED
+
+service wificond /system/bin/wificond_HYBRIS_DISABLED
