@@ -1,7 +1,7 @@
-%define device kirin
-%define rpm_device i4113
+%define device mermaid
+%define rpm_device i4213
 
-%define device_pretty Xperia 10 - Dual SIM
+%define device_pretty Xperia 10 Plus - Dual SIM
 
 %define pixel_ratio 1.75
 
