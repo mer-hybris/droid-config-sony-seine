@@ -150,8 +150,11 @@ FILES="flash* *.img* *.exe *.dll *-release"
 
 # Set supported devices in flash scripts
 if [ "@DEVICEMODEL@" = "i4113" ]; then
-  sed -e "s/\@DEVICES\@/\-e \"I4113\"/g" -i flash.sh
-  sed -e "s/\@DEVICES\@/:: I4113/g" -i flash-on-windows.bat
+  sed -e "s/\@DEVICES\@/\-e \"I4113\" -e \"I4193\"/g" -i flash.sh
+  sed -e "s/\@DEVICES\@/:: I4113\r\n:: I4193/g" -i flash-on-windows.bat
+elif [ "@DEVICEMODEL@" = "i4213" ]; then
+  sed -e "s/\@DEVICES\@/\-e \"I4213\" -e \"I4293\"/g" -i flash.sh
+  sed -e "s/\@DEVICES\@/:: I4213\r\n:: I4293/g" -i flash-on-windows.bat
 fi
 
 mkdir -p ${RELEASENAME}
