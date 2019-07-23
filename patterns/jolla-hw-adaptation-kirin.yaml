@@ -65,6 +65,9 @@ Requires:
 # enable device lock and allow to select untrusted software
 - sailfish-devicelock-fpd
 
+# Enable home encryption
+- sailfish-device-encryption
+
 # For GPS
 - geoclue-provider-hybris
 
