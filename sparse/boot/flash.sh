@@ -183,7 +183,7 @@ if [ -z ${BLOB_BIN_PATH} ]; then
 fi
 
 BLOBS=""
-for b in $(ls -1 ${BLOB_BIN_PATH}/*_v8_ganges.img 2>/dev/null); do
+for b in $(ls -1 ${BLOB_BIN_PATH}/*_v9_ganges.img 2>/dev/null); do
   if [ -n "$BLOBS" ]; then
    echo; echo More than one supported Sony Vendor image was found in this directory.
    echo Please remove any additional files.
