@@ -1,4 +1,4 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc SDM630"
+CPUCHECK_STRING="Qualcomm Technologies, Inc SDM63.$"
 
 # Because of flash-partition checks 1 needs to be defined
 # Others can go with parition numbers
