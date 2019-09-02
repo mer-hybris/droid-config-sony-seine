@@ -71,5 +71,8 @@ Requires:
 # For GPS
 - geoclue-provider-hybris
 
+# For suspend to work with enabled Wi-Fi on newer Qualcomm devices
+- sailfish-connman-plugin-suspend
+
 Summary: Jolla HW Adaptation mermaid
 
