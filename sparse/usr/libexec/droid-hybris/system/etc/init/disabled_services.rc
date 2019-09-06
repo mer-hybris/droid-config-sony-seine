@@ -19,3 +19,5 @@ service vold /system/bin/vold_HYBRIS_DISABLED
 service wificond /system/bin/wificond_HYBRIS_DISABLED
 
 service storaged /system/bin/storaged_HYBRIS_DISABLED
+
+service surfaceflinger surfaceflinger_HYBRIS_DISABLED
