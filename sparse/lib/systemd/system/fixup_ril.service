@@ -1,0 +1,11 @@
+[Unit]
+Description=Telephony fixup service
+Before=ofono.service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/bin/droid/fixup_ril.sh
+Restart=no
+RemainAfterExit=yes
+
