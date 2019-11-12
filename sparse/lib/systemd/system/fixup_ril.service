@@ -1,6 +1,6 @@
 [Unit]
 Description=Telephony fixup service
-Before=droid-hal-init.service
+After=droid-hal-init.service
 DefaultDependencies=no
 
 [Service]
