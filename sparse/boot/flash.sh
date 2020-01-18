@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Contact: Matti Kosola <matti.kosola@jollamobile.com>
 #
@@ -52,6 +52,9 @@ fi
 
 OS_VERSION=
 
+FASTBOOT_BIN_PATH=
+FASTBOOT_BIN_NAME=
+
 case $UNAME in
   Linux)
     echo "Detected Linux"
@@ -61,14 +64,15 @@ case $UNAME in
     OS_VERSION=$major-$minor
     echo "Detected Mac OS X - Version: $OS_VERSION"
     ;;
+  FreeBSD)
+    FASTBOOT_BIN_PATH="/usr/local/bin/"
+    echo "Detected FreeBSD"
+    ;;
   *)
     echo "Failed to detect operating system!"
     exit 1
     ;;
 esac
-
-FASTBOOT_BIN_PATH=
-FASTBOOT_BIN_NAME=
 
 if ! check_fastboot "fastboot-$UNAME-$OS_VERSION" ; then
   if ! check_fastboot "fastboot-$UNAME"; then
@@ -80,6 +84,7 @@ if ! check_fastboot "fastboot-$UNAME-$OS_VERSION" ; then
       echo "    Debian/Ubuntu/.deb distros:  apt-get install android-tools-fastboot"
       echo "    Fedora:  yum install android-tools"
       echo "    OS X:    brew install android-sdk"
+      echo "    FreeBSD: pkg install android-tools-fastboot"
       echo ""
       exit 1
     else
@@ -148,8 +153,8 @@ IMAGES=(
 "vendor_b ${SAILFISH_IMAGE_PATH}vendor.img001"
 )
 
-if [ "$UNAME" = "Darwin" ]; then
-  # macOS doesn't have md5sum so lets use md5 there.
+if [ "$UNAME" = "Darwin" ] || [ "$UNAME" = "FreeBSD" ]; then
+  # macOS and FreeBSD don't have md5sum so lets use md5 there.
   while read -r line; do
     md5=$(echo $line | awk '{ print $1 }')
     filename=$(echo $line | awk '{ print $2 }')
