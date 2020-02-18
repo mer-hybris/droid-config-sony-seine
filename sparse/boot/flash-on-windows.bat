@@ -33,13 +33,13 @@ call :sleep 3
 @call :md5sum flash-on-windows.bat
 
 set fastbootcmd_no_device=fastboot.exe
-set current_device=
+set products=
 
 echo(
 echo Searching for a compatible device...
 
 :: Ensure that we are flashing right device
-@DEVICES@
+:: @DEVICES@
 
 @call :devices
 
@@ -60,20 +60,16 @@ exit /b 1
 
 :no_error_serialnumbers
 
+for %%d in ( %serialnumbers% ) do (
+  set fastbootcmd=%fastbootcmd_no_device% -s %%d
+  @call :getvar product
+  findstr /R "@DEVICES@" %tmpflashfile% >NUL 2>NUL
+  if not errorlevel 1 (
+    call :new_product_found %%d
+  )
+)
 
-if "%serialnumbers%" == "%serialnumbers: =%" GOTO no_multiple_serialnumbers
-
-echo(
-echo It seems that there are multiple compatible devices connected in fastboot mode.
-echo Make sure only the device that you intend to flash is connected.
-pause
-exit /b 1
-
-:no_multiple_serialnumbers
-
-set current_device=%serialnumbers%
-
-if not [%current_device%] == [] GOTO no_error_product
+if not [%products%] == [] goto :no_error_product 
 
 echo(
 echo The DEVICE this flashing script is meant for WAS NOT FOUND!
@@ -85,8 +81,19 @@ exit /b 1
 
 :no_error_product
 
+if "%products%" == "%products: =%" GOTO :no_multiple_products
+
+echo(
+echo It seems that there are multiple compatible devices connected in fastboot mode.
+echo Make sure only the device that you intend to flash is connected.
+pause
+exit /b 1
+
+
+:no_multiple_products
+
 :: Now we know which device we need to flash
-set fastbootcmd=%fastbootcmd_no_device% -s %current_device%
+set fastbootcmd=%fastbootcmd_no_device% -s %products%
 
 :: Check that device has been unlocked
 @call :getvar secure
@@ -190,6 +197,15 @@ if "%serialnumbers%" == "" (
 set serialnumbers=%serialno%
 ) else (
 set "serialnumbers=%serialno% %serialnumbers%"
+)
+@exit /b 0
+
+:new_product_found
+set product=%1
+if "%products%" == "" (
+set products=%product%
+) else (
+set "products=%product% %products%"
 )
 @exit /b 0
 
