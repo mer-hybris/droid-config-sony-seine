@@ -188,7 +188,7 @@ for IMAGE in "${IMAGES[@]}"; do
 done
 
 if [ -z ${BLOB_BIN_PATH} ]; then
-  BLOB_BIN_PATH=./
+  BLOB_BIN_PATH=.
 fi
 
 BLOBS=""
@@ -221,7 +221,7 @@ for IMAGE in "${IMAGES[@]}"; do
   $FLASHCMD $partition $ifile
 done
 
-echo "Flashing oem partition.."
+echo "Flashing $BLOBS to oem partition.."
 $FLASHCMD oem_a $BLOBS
 
 echo
