@@ -140,10 +140,6 @@ if [ "$($FASTBOOTCMD getvar secure 2>&1 | head -n1 | cut -d ' ' -f2 )" == "yes" 
   exit 1;
 fi
 
-if [ -z ${BINARY_PATH} ]; then
-  BINARY_PATH=./
-fi
-
 if [ -z ${SAILFISH_IMAGE_PATH} ]; then
   SAILFISH_IMAGE_PATH=./
 fi
