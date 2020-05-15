@@ -108,6 +108,10 @@ SERIALNUMBERS=
 count=0
 for SERIALNO in $FASTBOOT_DEVICES; do
   PRODUCT=$($FASTBOOTCMD_NO_DEVICE -s $SERIALNO getvar product 2>&1 | head -n1 | cut -d ' ' -f2)
+  BASEBAND=$($FASTBOOTCMD_NO_DEVICE -s $SERIALNO getvar version-baseband 2>&1 | head -n1 | cut -d ' ' -f2)
+  BOOTLOADER=$($FASTBOOTCMD_NO_DEVICE -s $SERIALNO getvar version-bootloader 2>&1 | head -n1 | cut -d ' ' -f2)
+
+  echo "Found $PRODUCT, baseband:$BASEBAND, bootloader:$BOOTLOADER"
 
   if [ ! -z "$(echo $PRODUCT | grep @DEVICES@)" ]; then
     SERIALNUMBERS="$SERIALNO $SERIALNUMBERS"
