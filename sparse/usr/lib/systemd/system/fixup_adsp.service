@@ -1,0 +1,10 @@
+[Unit]
+Description=ADSP service
+Before=droid-hal-init.service
+DefaultDependencies=no
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/droid/fixup_adsp.sh
+Restart=always
