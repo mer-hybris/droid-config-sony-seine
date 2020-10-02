@@ -20,5 +20,6 @@ Obsoletes: audioflingerglue
 
 Requires: droid-system-%{device}-%{rpm_device}
 Requires: droid-system-vendor-%{device}-%{rpm_device}
+Requires: gawk
 
 Obsoletes: pulseaudio-modules-droid-glue
