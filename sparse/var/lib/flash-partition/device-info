@@ -1,15 +1,11 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc SDM63.$"
+CPUCHECK_STRING="Qualcomm Technologies, Inc TRINKET$"
 
-# Because of flash-partition checks 1 needs to be defined
-# Others can go with parition numbers
+# Because of flash-partition checks, 1 needs to be defined
+# Others can go with partition numbers
 PART_1="boot_a"
-PART_39="boot_b"
-PART_69="vendor_a"
-PART_70="vendor_b"
+PART_43="boot_b"
 
-PART_REAL_1="mmcblk0p38"
-PART_REAL_39="mmcblk0p39"
-PART_REAL_69="mmcblk0p69"
-PART_REAL_70="mmcblk0p70"
+PART_REAL_1="mmcblk0p42"
+PART_REAL_43="mmcblk0p43"
 
-PART_I="1 39 69 70"
+PART_I="1 43"
