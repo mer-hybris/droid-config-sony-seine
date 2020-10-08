@@ -1,7 +1,0 @@
-Description: Pattern with packages for i3213 configurations
-Name: jolla-configuration-i3213
-Requires:
-- patterns-sailfish-device-configuration-i3213
-
-Summary: Jolla Configuration i3213
-

@@ -1,5 +1,0 @@
-/etc/ofono/ril_subscription.d/dual-sim.conf
-/usr/share/csd/settings.d/20-hw-settings-dual-sim.ini
-/usr/share/ssu/board-mappings.d/10-i3213.ini
-/usr/share/ssu/board-mappings.d/10-i4113.ini
-/usr/share/ssu/board-mappings.d/10-i4213.ini
