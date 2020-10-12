@@ -120,7 +120,7 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_v9_ganges.img) do (
+for /r %%f in (*_v11a_seine.img) do (
 if not defined blobfilename (
 REM Take only the filename and strip out the path which otherwise is there.
 REM This is to make sure that we do not face issues later with e.g. spaces in the path etc.
@@ -143,7 +143,7 @@ echo Please download it from
 echo %oemblobwebsite%
 echo(
 echo Ensure you download the supported version of the image found under:
-echo "Software binaries for AOSP Pie (Android 9.0) - Kernel 4.9 - Ganges"
+echo "Software binaries for AOSP Android 10.0 - Kernel 4.14 - Seine"
 echo and unzip it into this directory.
 echo Note: information on which versions are supported is written in our Sailfish X
 echo installation instructions online.
@@ -164,10 +164,7 @@ echo Found '%blobfilename%' that will be used as vendor image. Continuing..
 
 @call :fastboot flash boot_a hybris-boot.img
 @call :fastboot flash boot_b hybris-boot.img
-@call :fastboot flash system_b fimage.img001
 @call :fastboot flash userdata sailfish.img001
-@call :fastboot flash vendor_a vendor.img001
-@call :fastboot flash vendor_b vendor.img001
 @call :fastboot flash oem_a %blobfilename%
 
 :: NOTE: Do not reboot here as the battery might not be in the device
