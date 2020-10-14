@@ -1,0 +1,10 @@
+[Unit]
+Description=Fix interfaces for USB RNDIS to work. To remove this hack, fix in usb-moded instead
+Before=usb-moded.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /usr/bin/droid/usb-moded-hack.sh
+
+[Install]
+WantedBy=basic.target
