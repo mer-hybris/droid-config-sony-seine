@@ -21,6 +21,5 @@ Obsoletes: audioflingerglue
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 Requires: droid-system-%{device}-%{rpm_device}
-Requires: droid-system-vendor-%{device}-%{rpm_device}
 
 Obsoletes: pulseaudio-modules-droid-glue
