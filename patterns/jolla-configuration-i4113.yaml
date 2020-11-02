@@ -18,12 +18,16 @@ Requires:
 - sailfish-content-graphics-z@ICON_RES@
 
 - jolla-settings-networking-multisim
-- jolla-settings-system-nfc
 - jolla-settings-system-flashlight
 
 - geoclue-provider-mlsdb
 - csd
 - mapplauncherd-booster-silica-qt5-media
+
+# NFC
+- nfcd-mce-plugin
+- nfcd-dbuslog-plugin
+- jolla-settings-system-nfc
 
 Summary: Jolla Configuration i4113
 
