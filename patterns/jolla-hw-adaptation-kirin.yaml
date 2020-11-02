@@ -18,7 +18,6 @@ Requires:
 - ofono-ril-binder-plugin
 
 # NFC
-- nfcd-mce-plugin
 - nfcd-binder-plugin
 
 # Sensors
