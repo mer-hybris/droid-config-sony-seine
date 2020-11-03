@@ -1,33 +1,7 @@
 Description: Pattern with packages for i4113 configurations
 Name: jolla-configuration-i4113
 Requires:
-- pattern:jolla-hw-adaptation-kirin
-
-- droid-config-i4113-sailfish
-- droid-config-i4113-pulseaudio-settings
-- droid-config-i4113-policy-settings
-- droid-config-i4113-preinit-plugin
-- droid-config-i4113-flashing
-- droid-config-i4113-bluez5
-- droid-hal-version-i4113
-
-- patterns-sailfish-applications
-- patterns-sailfish-ui
-- patterns-sailfish-cellular-apps
-
-- sailfish-content-graphics-z@ICON_RES@
-
-- jolla-settings-networking-multisim
-- jolla-settings-system-flashlight
-
-- geoclue-provider-mlsdb
-- csd
-- mapplauncherd-booster-silica-qt5-media
-
-# NFC
-- nfcd-mce-plugin
-- nfcd-dbuslog-plugin
-- jolla-settings-system-nfc
+- patterns-sailfish-device-configuration-i4113
 
 Summary: Jolla Configuration i4113
 

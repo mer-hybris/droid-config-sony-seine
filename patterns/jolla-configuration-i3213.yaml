@@ -1,32 +1,7 @@
 Description: Pattern with packages for i3213 configurations
 Name: jolla-configuration-i3213
 Requires:
-- pattern:jolla-hw-adaptation-mermaid
-
-- droid-config-i3213-sailfish
-- droid-config-i3213-pulseaudio-settings
-- droid-config-i3213-policy-settings
-- droid-config-i3213-preinit-plugin
-- droid-config-i3213-flashing
-- droid-config-i3213-bluez5
-- droid-hal-version-i3213
-
-- patterns-sailfish-applications
-- patterns-sailfish-ui
-- patterns-sailfish-cellular-apps
-
-- sailfish-content-graphics-z@ICON_RES@
-
-- jolla-settings-system-flashlight
-
-- geoclue-provider-mlsdb
-- csd
-- mapplauncherd-booster-silica-qt5-media
-
-# NFC
-- nfcd-mce-plugin
-- nfcd-dbuslog-plugin
-- jolla-settings-system-nfc
+- patterns-sailfish-device-configuration-i3213
 
 Summary: Jolla Configuration i3213
 
