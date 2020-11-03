@@ -7,3 +7,5 @@
 
 %include droid-config-common.inc
 %include droid-configs-device/droid-configs.inc
+%include patterns/patterns-sailfish-device-adaptation-mermaid.inc
+%include patterns/patterns-sailfish-device-configuration-i3213.inc
