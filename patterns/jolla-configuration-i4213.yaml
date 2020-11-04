@@ -1,33 +1,7 @@
 Description: Pattern with packages for i4213 configurations
 Name: jolla-configuration-i4213
 Requires:
-- pattern:jolla-hw-adaptation-mermaid
-
-- droid-config-i4213-sailfish
-- droid-config-i4213-pulseaudio-settings
-- droid-config-i4213-policy-settings
-- droid-config-i4213-preinit-plugin
-- droid-config-i4213-flashing
-- droid-config-i4213-bluez5
-- droid-hal-version-i4213
-
-- patterns-sailfish-applications
-- patterns-sailfish-ui
-- patterns-sailfish-cellular-apps
-
-- sailfish-content-graphics-z@ICON_RES@
-
-- jolla-settings-networking-multisim
-- jolla-settings-system-flashlight
-
-- geoclue-provider-mlsdb
-- csd
-- mapplauncherd-booster-silica-qt5-media
-
-# NFC
-- nfcd-mce-plugin
-- nfcd-dbuslog-plugin
-- jolla-settings-system-nfc
+- patterns-sailfish-device-configuration-i4213
 
 Summary: Jolla Configuration i4213
 
