@@ -4,6 +4,7 @@ Requires: droid-hal-pdx201
 Requires: droid-hal-pdx201-img-boot
 Requires: droid-hal-pdx201-img-recovery
 Requires: droid-hal-pdx201-tools
+Requires: droid-hal-pdx201-kernel-dtbo
 
 # Hybris packages
 Requires: libhybris-libEGL

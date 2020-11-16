@@ -1,5 +1,6 @@
 /boot/hybris-boot.img
 /boot/hybris-recovery.img
+/boot/dtbo.img
 droid-config-xqau52-out-of-image-files
 droid-flashing-tools
 /etc/hw-release

@@ -147,6 +147,8 @@ fi
 IMAGES=(
 "boot_a ${SAILFISH_IMAGE_PATH}hybris-boot.img"
 "boot_b ${SAILFISH_IMAGE_PATH}hybris-boot.img"
+"dtbo_a ${SAILFISH_IMAGE_PATH}dtbo.img"
+"dtbo_b ${SAILFISH_IMAGE_PATH}dtbo.img"
 "userdata ${SAILFISH_IMAGE_PATH}sailfish.img001"
 )
 
