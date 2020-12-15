@@ -16,6 +16,7 @@ Requires: bluebinder
 
 # Telephony
 Requires: ofono-ril-binder-plugin
+Requires: dummy_netd
 
 # NFC
 Requires: nfcd-binder-plugin
