@@ -41,14 +41,9 @@ Requires: qt5-qtwayland-wayland_egl
 Requires: qt5-qpa-hwcomposer-plugin
 Requires: qtscenegraph-adaptation
 
-# Add GStreamer v1.0 as standard
-Requires: gstreamer1.0
-Requires: gstreamer1.0-plugins-good
-Requires: gstreamer1.0-plugins-base
-Requires: gstreamer1.0-plugins-bad
-Requires: nemo-gstreamer1.0-interfaces
-# Enable after droidmedia is tested working for Android 10 BSPs
-#Requires: gstreamer1.0-droid
+# For hybris devices with droidmedia, see HADK pdf for more information
+Requires: gstreamer1.0-droid
+Requires: gmp-droid
 
 # For camera dummy audioflinger is needed
 Requires: audiosystem-passthrough-dummy-af
