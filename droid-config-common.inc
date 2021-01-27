@@ -11,6 +11,9 @@
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
+# No device reset
+Provides: jolla-settings-system-reset
+
 # Device-specific usb-moded configuration
 Provides: usb-moded-configs
 Obsoletes: usb-moded-defaults
