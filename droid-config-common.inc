@@ -26,3 +26,5 @@ Obsoletes: audioflingerglue
 Requires: droid-system-%{device}-%{rpm_device}
 
 Obsoletes: pulseaudio-modules-droid-glue
+
+Requires: libgbinder-tools
