@@ -1,4 +1,5 @@
 [apps/jolla-camera/primary/image]
+cameraId=0
 imageResolution='4000x3000'
 videoResolution='1920x1080'
 viewfinderResolution='1440x1080'
@@ -14,6 +15,7 @@ viewfinderResolution_16_9='1920x1080'
 focusDistance=16
 
 [apps/jolla-camera/secondary/image]
+cameraId=3
 imageResolution='3264x2448'
 videoResolution='1920x1080'
 viewfinderResolution='1440x1080'
@@ -29,6 +31,7 @@ viewfinderResolution_16_9='1920x1080'
 focusDistance=4
 
 [apps/jolla-camera/primary/video]
+cameraId=0
 imageResolution='1920x1080'
 videoResolution='1920x1080'
 viewfinderResolution='1920x1080'
@@ -41,6 +44,7 @@ exposureCompensationValues=[4, 2, 0, -2, -4]
 focusDistance=16
 
 [apps/jolla-camera/secondary/video]
+cameraId=3
 imageResolution='1920x1080'
 videoResolution='1920x1080'
 viewfinderResolution='1920x1080'
