@@ -1,0 +1,2 @@
+load-module module-droid-card rate=48000 quirks=+unload_call_exit,+audio_cal_wait prewrite_on_resume=deep_buffer=AUDIO_DEVICE_OUT_ALL:1/always
+load-module module-udev-detect
