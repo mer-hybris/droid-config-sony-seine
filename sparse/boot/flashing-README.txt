@@ -49,8 +49,8 @@ Now read and follow Sony's instructions on how to connect your device to your PC
 in fastboot mode and unlock the bootloader. Don't miss the step to enable
 'OEM unlock' from within Android beforehand.
 
-NOTE: After unlocking bootloader you need to boot the device once to Android UI
-      before proceed to flashing Sailfish X part.
+IMPORTANT! After unlocking bootloader you need to boot the device once to Android UI
+           before proceeding to flashing Sailfish X part.
 
 Neither Linux nor OS X should require any additional drivers to connect to the
 device in fastboot mode, but you will need to have installed the fastboot

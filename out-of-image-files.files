@@ -1,4 +1,5 @@
 /boot/flash.sh
+/boot/flash-config.sh
 /boot/flash-on-windows.bat
 /boot/flashing-README.txt
 /boot/extracting-README.txt
