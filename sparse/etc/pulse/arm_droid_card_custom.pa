@@ -1,2 +1,2 @@
-load-module module-droid-card rate=48000 quirks=+unload_call_exit,+audio_cal_wait,+no_hw_volume
+load-module module-droid-card rate=48000 quirks=+unload_call_exit,+audio_cal_wait,+no_hw_volume,+speaker_before_voice,+standby_set_route
 load-module module-udev-detect
