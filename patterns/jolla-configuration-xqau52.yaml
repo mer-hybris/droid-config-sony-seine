@@ -1,7 +1,0 @@
-Description: Pattern with packages for xqau52 configurations
-Name: jolla-configuration-xqau52
-Requires:
-- patterns-sailfish-device-configuration-xqau52
-
-Summary: Jolla Configuration xqau52
-
