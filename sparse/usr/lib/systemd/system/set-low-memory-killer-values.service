@@ -1,0 +1,8 @@
+[Unit]
+Description=Set LMK killer thresholds and score groups
+After=init-done.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c "echo 92160,115200,138240,161280,206490 > /sys/module/lowmemorykiller/parameters/minfree;echo 0,58,147,529,1000 > /sys/module/lowmemorykiller/parameters/adj"
