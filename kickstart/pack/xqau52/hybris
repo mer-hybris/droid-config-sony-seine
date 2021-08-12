@@ -110,10 +110,10 @@ FILES="flash* *.img* *.exe *.dll *-release"
 
 # Set supported devices in flash scripts
 if [ "@DEVICEMODEL@" = "xqau51" ]; then
-  sed -e "s/\@DEVICES\@/\-e \"XQ-AU51\"/g" -i flash.sh
+  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AU51\"/g" -i flash-config.sh
   sed -e "s/\@DEVICES\@/:: XQ-AU51/g" -i flash-on-windows.bat
 elif [ "@DEVICEMODEL@" = "xqau52" ]; then
-  sed -e "s/\@DEVICES\@/\-e \"XQ-AU52\"/g" -i flash.sh
+  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AU52\"/g" -i flash-config.sh
   sed -e "s/\@DEVICES\@/:: XQ-AU52/g" -i flash-on-windows.bat
 fi
 
