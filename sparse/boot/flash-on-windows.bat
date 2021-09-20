@@ -260,7 +260,7 @@ set fastbootkillretval=%errorlevel%
 @echo(
 @echo FLASHING FAILED!
 @echo(
-@echo Please go to https://together.jolla.com/ and ask for guidance.
+@echo Please go to https://forum.sailfishos.org/ and ask for guidance.
 @echo(
 @pause
 @exit 1
