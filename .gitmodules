@@ -1,3 +1,6 @@
 [submodule "droid-configs-device"]
 	path = droid-configs-device
 	url = https://github.com/mer-hybris/droid-hal-configs
+[submodule "sparse-sony"]
+	path = sparse-sony
+	url = https://github.com/mer-hybris/droid-config-sony.git
