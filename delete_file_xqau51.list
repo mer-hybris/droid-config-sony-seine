@@ -1,0 +1,4 @@
+/etc/ofono/binder.d/dual-sim.conf
+/etc/ofono/ril_subscription.d/dual-sim.conf
+/usr/share/csd/settings.d/20-hw-settings-dual-sim.ini
+/usr/share/ssu/board-mappings.d/10-xqau52.ini
