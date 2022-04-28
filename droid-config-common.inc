@@ -10,6 +10,7 @@
 # Device-specific ofono configuration
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
+Obsoletes: ofono-configs-binder
 
 # No device reset
 Provides: jolla-settings-system-reset
