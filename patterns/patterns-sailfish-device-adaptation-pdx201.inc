@@ -17,6 +17,8 @@ Requires: bluebinder
 # Telephony
 Requires: ofono-binder-plugin
 Requires: dummy_netd
+Requires: ofono-modem-switcher-plugin
+Requires: ofono-vendor-qti-radio-plugin
 
 # NFC
 Requires: nfcd-binder-plugin
