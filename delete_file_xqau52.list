@@ -1,1 +1,5 @@
 /usr/share/ssu/board-mappings.d/10-xqau51.ini
+/usr/lib/systemd/system/sailfish-unlock-agent.service.d/50-vendor.hwcomposer-2-3.conf
+/usr/lib/systemd/system/sailfish-upgrade-ui.service.d/50-vendor.hwcomposer-2-3.conf
+/usr/lib/systemd/user/jolla-startupwizard-pre-user-session.service.d/50-vendor.hwcomposer-2-3.conf
+/usr/lib/systemd/user/lipstick.service.d/50-vendor.hwcomposer-2-3.conf
