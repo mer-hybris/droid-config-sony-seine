@@ -1,0 +1,21 @@
+<MediaCodecs>
+    <Decoders>
+        <!--
+            The purpose of this file is to disable known-broken codec
+            configurations for CTS compatibility.
+
+            The enabled="false" flag doesn't behave as expected for OMX, so
+            disable the unsupported/broken codecs by specifying a non existing
+            mime type. The later actual hw definition of the codec does NOT
+            contain update="true" thus won't override the type, and even if
+            there is an update="true" entry later it won't override the type
+            either, see
+            "MediaCodec: cannot update non-existing type for codec"
+            in frameworks/av/media/libstagefright/xmlparser/MediaCodecsXmlParser.cpp.
+            Thus as long as the two following definitions are the first ones
+            being parsed, the codecs are disabled.
+        -->
+        <MediaCodec name="OMX.qcom.video.decoder.mpeg2" type="alien/disabled" enabled="false" />
+        <MediaCodec name="OMX.qcom.video.decoder.mpeg2.secure" type="alien/disabled" enabled="false" />
+    </Decoders>
+</MediaCodecs>
