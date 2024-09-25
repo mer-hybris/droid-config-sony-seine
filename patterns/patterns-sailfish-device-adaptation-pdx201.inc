@@ -62,6 +62,7 @@ Requires: rfkill
 
 # enable fingerprint reader
 Requires: sailfish-devicelock-fpd
+Requires: sailfish-fpd
 
 # Enable home encryption
 Requires: sailfish-device-encryption
