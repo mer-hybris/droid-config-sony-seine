@@ -4,6 +4,8 @@ FLASH_OPS=(
 "getvar_fail_if secure yes"
 "flash boot_a hybris-boot.img"
 "flash boot_b hybris-boot.img"
+"flash recovery_a hybris-recovery.img"
+"flash recovery_b hybris-recovery.img"
 "flash dtbo_a dtbo.img"
 "flash dtbo_b dtbo.img"
 "flash userdata sailfish.img001"
