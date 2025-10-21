@@ -162,8 +162,14 @@ echo Found '%blobfilename%' that will be used as vendor image. Continuing..
 :: happens when flashing is done.
 @echo on
 
+@call :md5sum hybris-boot.img
+@call :md5sum hybris-recovery.img
+@call :md5sum sailfish.img001
+@call :md5sum dtbo.img
 @call :fastboot flash boot_a hybris-boot.img
 @call :fastboot flash boot_b hybris-boot.img
+@call :fastboot flash recovery_a hybris-recovery.img
+@call :fastboot flash recovery_b hybris-recovery.img
 @call :fastboot flash userdata sailfish.img001
 @call :fastboot flash dtbo_a dtbo.img
 @call :fastboot flash dtbo_b dtbo.img
@@ -244,10 +250,6 @@ set fastbootkillretval=%errorlevel%
 
 :: Function to call fastboot command with error checking
 :fastboot
-:: When flashing check md5sum of files
-@IF "%~1" == "flash" (
-  @call :md5sum %~3
-)
 %fastbootcmd% %*
 @IF "%ERRORLEVEL%" == "1" (
   @echo(
