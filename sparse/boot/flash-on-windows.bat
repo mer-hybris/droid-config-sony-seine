@@ -4,9 +4,9 @@
 :: This script is using fastboot to flash which differs from the factory method.
 
 set tmpflashfile=tmpfile.txt
-set emmawebsite=https://developer.sony.com/develop/open-devices/get-started/flash-tool/download-flash-tool/
-set unlockwebsite=https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-set oemblobwebsite=https://developer.sony.com/develop/open-devices/downloads/software-binaries/
+set emmawebsite=https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/flash-tool/download-the-flash-tool
+set unlockwebsite=https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/unlock-bootloader
+set oemblobwebsite=https://opendevices.sony.net/file/download/software-binaries-for-aosp-android-10-0-kernel-4-14-seine
 set fastbootkillretval=0
 set serialnumbers=
 

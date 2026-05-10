@@ -9,7 +9,7 @@ system with Sailfish X, you will need to be able to unlock the bootloader of
 your device so that it can be flashed with a new operating system. This process
 is supported by Sony as part of their Open Devices programme:
 
-https://developer.sony.com/develop/open-devices/
+https://opendevices.sony.net/
 
 The best way to get an unlockable device is to buy is a brand new Xperia™ 10 II
 in a sales box. If you are tempted to buy second-hand please be aware that there
@@ -19,7 +19,7 @@ been SIM unlocked. It will not be possible to flash Sailfish X onto these
 devices. Instructions for checking the unlockability of Xperia™ models can be
 found on the Sony Developer World website here:
 
-https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
+https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/unlock-bootloader
 
 If in doubt, ask the vendor to check this before you buy.
 
@@ -35,7 +35,7 @@ more difficult once the bootloader has been unlocked.
 Make sure that the system language of your Xperia™ device is set to English
 before you continue.
 
-Go to https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
+Go to https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/unlock-bootloader
 website and select the model of your device Xperia™ 10 II.
 You should see additional instructions to prepare your device for unlocking:
 
